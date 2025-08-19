@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="=stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>
+        Calculator App
+    </h1>
+    
+    <form>
+        <label for="fnum">First number:</label><br>
+        <input type="number" id="fnumber" name="fnum"><br>
+        <label for="snum">Second number:</label><br>
+        <input type="number" id="snumber" name="snum">
+    </form>
+
+    <p id="result"> Result: </p>
+    <p></p>
+
+    <button type="button" id="add">ADD</button>
+    <button type="button" id="sub">subtract</button>
+    <button type="button" id="multi">multiply</button>
+    <button type="button" id="divide">divide</button>
+
+    <script>
+        const first_number = document.getElementById('fnumber');
+        const second_number = document.getElementById('snumber');
+        const result = document.getElementById('result');
+        const add_button = document.getElementById('add');
+        const sub_button = document.getElementById('sub');
+        const multiply_button = document.getElementById('multi');
+        const divide_button = document.getElementById('divide');
+
+        add_button.addEventListener("click", () => {
+            const first_number = document.getElementById('fnumber').value 
+            const second_number = document.getElementById('snumber').value
+
+            answer = Number(first_number) + Number(second_number);
+            console.log(answer)
+            result.textContent = answer;
+        })
+        sub_button.addEventListener("click", () => {
+            const first_number = document.getElementById('fnumber').value
+            const second_number = document.getElementById('snumber').value
+
+            answer = Number(first_number) = Numbher(second_number);
+            console.log(answer)
+            result.textContent = answer;
+
+        })
+        multiply_button.addEventListener("click", () => {
+            const first_number = document.getElementById('fnumber').value
+            const second_number = document.getElementById('snumber').value
+
+            answer = Number(first_number) = Number(second_number);
+            console.log(answer)
+            result.textContent = answer;
+
+        })
+        divide_button.addEventListener("click", () => {
+            const first_number = document.getElementById('fnumber').value
+            const second_number = document.getElementById('snumber').value
+
+            answer = Number(first_number) = Number(second_number);
+            console.log(answer)
+            result.textContent=answer;
+
+        })
+    </script>
+
+
+</body>
+</html>
